@@ -1,29 +1,18 @@
-# PredictaKenya™ - Complete Requirements for Streamlit Cloud
-# Kustawi Digital Solutions Ltd
-# USE THIS FILE for Streamlit Cloud deployment
+# PredictaKenya™ - FIXED Requirements for Streamlit Cloud
+# Compatible with Python 3.13 and Streamlit Cloud's build system
 
-# Core Data Science (REQUIRED)
-numpy==1.26.2
-pandas==2.1.4
-scipy==1.11.4
+# Core packages (using versions that work with Python 3.13)
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+statsmodels>=0.14.0
+joblib>=1.3.0
 
-# Machine Learning (REQUIRED)
-scikit-learn==1.3.2
-statsmodels==0.14.1
-joblib==1.3.2
+# Visualization (REQUIRED - this was missing!)
+plotly>=5.18.0
 
-# Visualization (REQUIRED - fixes plotly.graph_objects error)
-plotly==5.18.0
-matplotlib==3.8.2
-seaborn==0.13.0
+# Web Framework
+streamlit>=1.29.0
 
-# Web Framework (REQUIRED)
-streamlit==1.29.0
-
-# File Handling (REQUIRED)
-openpyxl==3.1.2
-xlrd==2.0.1
-
-# Utilities (REQUIRED)
-python-dateutil==2.8.2
-pytz==2023.3
+# File Handling
+openpyxl>=3.1.0
